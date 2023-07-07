@@ -15,6 +15,7 @@ body {
 header {
     background-color: none;
     padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 nav ul {
@@ -195,6 +196,7 @@ footer {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 label {
@@ -235,22 +237,6 @@ button[type="submit"]:hover {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-}
-
-/* Back Link Styles */
-.back-link {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.back-link a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.back-link a:hover {
-    text-decoration: underline;
 }
 
 /* Table Styles */
@@ -312,7 +298,7 @@ table th:last-child {
     border-radius: 4px;
 }
 
-/* Form */
+/* Form Styles */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -345,7 +331,6 @@ select {
     margin-bottom: 20px;
 }
 
-/* Update the style for readonly inputs */
 input[readonly] {
     border: none;
     background-color: #f2f2f2;
@@ -364,12 +349,13 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Pagination */
+.edit {
+    background-color: #f3f7ff;
+}
+
+/* Pagination Styles */
 .pagination-container {
     text-align: center;
     margin-top: 20px;
-}
-
-.edit {
-    background-color: #f3f7ff;
+    margin-bottom: 20px;
 }
