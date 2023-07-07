@@ -2,10 +2,16 @@
 <html>
 <head>
     <title>Edit Registration</title>
-    <!-- Add your CSS stylesheets or include a CSS file -->
+    <link rel="stylesheet" href="/css/style.css">
+<header>
+    <nav>
+        <ul>
+            <li><a href="/" class="logo">CapBay Auto</a></li>
+        </ul>
+    </nav>
+</header>
 </head>
-<body>
-    <a href="{{ route('reglist.index') }}">Back</a>
+<body class="edit">
     <h1>Edit Registration</h1>
 
     <form method="POST" action="{{ route('reglist.update', $registration->id) }}">
@@ -22,7 +28,7 @@
         <input type="text" id="phone" name="phone" value="{{ $registration->phone }}" readonly>
 
         <label for="address">Address:</label>
-        <input type="address" id="address" name="address" value="{{ $registration->address }}" readonly>
+        <input type="text" id="address" name="address" value="{{ $registration->address }}" readonly>
 
         <label for="preferred_date">Preferred Date:</label>
         <input type="date" id="preferred_date" name="preferred_date" value="{{ $registration->preferred_date }}" readonly>
@@ -44,6 +50,7 @@
         <input type="number" id="loan_amount" name="loan_amount" value="{{ $registration->loan_amount }}">
 
         <button type="submit">Update</button>
+        <a href="{{ route('reglist.index') }}">Back</a>
     </form>
 </body>
 </html>

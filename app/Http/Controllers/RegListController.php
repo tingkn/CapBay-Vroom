@@ -28,7 +28,7 @@ class RegListController extends Controller
             $registrations->orderBy('id');
         }
     
-        $registrations = $registrations->paginate(20);
+        $registrations = $registrations->paginate(10);
     
         return view('reglist.index', compact('registrations'));
     }
