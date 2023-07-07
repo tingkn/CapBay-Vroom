@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestDriveController;
+use App\Http\Controllers\RegListController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Test Drive Registration
+Route::resource('register', TestDriveController::class);
+Route::resource('/register', TestDriveController::class);
+
+// RegList
+Route::resource('reglist', RegListController::class);
+Route::resource('/reglist', RegListController::class);
