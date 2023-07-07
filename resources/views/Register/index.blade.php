@@ -26,7 +26,7 @@
             <input type="text" id="phone" name="phone" required>
             
             <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
+            <input type="text" id="address" name="address" required>
             
             <label for="preferred_date">Preferred Date:</label>
             <input type="date" id="preferred_date" name="preferred_date" required>

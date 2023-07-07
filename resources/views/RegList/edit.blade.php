@@ -46,8 +46,8 @@
             <option value="Completed" {{ $registration->purchase_status === 'Completed' ? 'selected' : '' }}>Completed</option>
         </select>
 
-        <label for="loan_amount">Loan Amount:</label>
-        <input type="number" id="loan_amount" name="loan_amount" value="{{ $registration->loan_amount }}">
+        <label for="loan_amount">Loan Amount (RM):</label>
+        <input type="number" id="loan_amount" name="loan_amount" value="{{ $loanAmount }}" readonly>
 
         <button type="submit">Update</button>
         <a href="{{ route('reglist.index') }}">Back</a>
